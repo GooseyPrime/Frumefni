@@ -94,11 +94,11 @@
   font-weight: 900;
   letter-spacing: 0.2em;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #d4af37, #f0e68c, #d4af37);
+  background: linear-gradient(135deg, #fffef0, #ffffff, #fffef0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 0 40px rgba(255, 254, 240, 0.3);
   animation: glow 3s ease-in-out infinite;
 }
 
@@ -218,14 +218,14 @@
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, var(--accent-gold), #b8860b);
+  background: linear-gradient(135deg, #fffef0, #ffffe8);
   color: var(--bg-black);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 254, 240, 0.3);
 }
 
 .cta-button.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 254, 240, 0.5);
 }
 
 .scroll-indicator {

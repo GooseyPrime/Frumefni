@@ -9,7 +9,7 @@
   --bg-dark: #0a0a0a;
   --text-white: #ffffff;
   --text-gray: #cccccc;
-  --accent-gold: #d4af37;
+  --accent-gold: #fffef0;
   --accent-silver: #c0c0c0;
   --accent-purple: #8b5cf6;
   --accent-blue: #3b82f6;
@@ -55,10 +55,10 @@ html {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 20px rgba(255, 254, 240, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+    box-shadow: 0 0 40px rgba(255, 254, 240, 0.6);
   }
 }
 
@@ -110,7 +110,7 @@ html {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-silver));
+  background: linear-gradient(135deg, #fffef0, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

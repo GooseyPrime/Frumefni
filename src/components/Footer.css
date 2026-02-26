@@ -90,7 +90,7 @@
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(255, 254, 240, 0.1);
   border: 1px solid var(--accent-gold);
   border-radius: 5px;
   color: var(--accent-gold);
@@ -101,9 +101,9 @@
 }
 
 .footer-link:hover {
-  background: rgba(212, 175, 55, 0.2);
+  background: rgba(255, 254, 240, 0.2);
   transform: translateX(3px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 5px 15px rgba(255, 254, 240, 0.2);
 }
 
 .footer-quote {
