@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -97,6 +98,7 @@ const Hero = () => {
 
         <div className="hero-cta">
           <a href="#about" className="cta-button primary">Discover the Experience</a>
+          <Link to="/support" className="cta-button secondary">Become Part of the Contact</Link>
         </div>
       </div>
 
