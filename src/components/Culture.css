@@ -138,6 +138,30 @@
   font-weight: 700;
 }
 
+.iceland-link-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.iceland-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--accent-gold), #b8860b);
+  color: var(--bg-black);
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.iceland-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+}
+
 .icelandic-terms {
   margin-top: 4rem;
   padding: 3rem;

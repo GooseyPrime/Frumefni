@@ -78,6 +78,11 @@ const Culture = () => {
                 <div className="info-value">12-15°C (54-59°F)</div>
               </div>
             </div>
+            <div className="iceland-link-container">
+              <a href="https://icelandeclipse.com" target="_blank" rel="noopener noreferrer" className="iceland-link">
+                Learn More About the 2026 Iceland Eclipse →
+              </a>
+            </div>
           </div>
 
           <div className="icelandic-terms">

@@ -22,6 +22,9 @@ const Footer = () => {
             <p>August 12, 2026</p>
             <p>Iceland</p>
             <p>Total Solar Eclipse</p>
+            <a href="https://icelandeclipse.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+              Visit Iceland Eclipse →
+            </a>
           </div>
 
           <div className="footer-section">
