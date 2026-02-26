@@ -43,7 +43,7 @@ const Hero = () => {
           muted 
           playsInline
         >
-          <source src="/eclipse-animation.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dksj2niho/video/upload/Revealing_Solar_Corona_With_Human_Figure_ym9kql.mp4" type="video/mp4" />
           {/* Fallback animated gradient background */}
         </video>
         <div className="hero-overlay"></div>

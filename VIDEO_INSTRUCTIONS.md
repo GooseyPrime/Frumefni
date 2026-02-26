@@ -1,12 +1,41 @@
 # Adding Your Eclipse Video to the Frumefni Website
 
-## Quick Start
+## Current Video
 
-To add your eclipse video to the hero section:
+The site is currently configured to use a **Cloudinary-hosted eclipse video**:
+
+**Direct URL**: 
+```
+https://res.cloudinary.com/dksj2niho/video/upload/Revealing_Solar_Corona_With_Human_Figure_ym9kql.mp4
+```
+
+**Cloudinary Details**:
+- Cloud Name: `dksj2niho`
+- Public ID: `Revealing_Solar_Corona_With_Human_Figure_ym9kql`
+- Embed URL: https://player.cloudinary.com/embed/?cloud_name=dksj2niho&public_id=Revealing_Solar_Corona_With_Human_Figure_ym9kql
+
+This stunning video shows a revealing solar corona with a human figure, perfectly capturing the essence of the Frumefni experience.
+
+## Using a Different Video
+
+If you want to replace the current video with your own:
+
+### Option 1: Local Video File
 
 1. **Place your video file** in the `/public` directory
-2. **Name it** `eclipse-animation.mp4` (or update the path in the code)
-3. The video will automatically display as the hero background
+2. **Name it** `eclipse-animation.mp4` (or use a custom name)
+3. **Update** `/src/components/Hero.jsx` line 35:
+   ```javascript
+   <source src="/eclipse-animation.mp4" type="video/mp4" />
+   ```
+
+### Option 2: External URL (Cloudinary, CDN, etc.)
+
+1. **Upload your video** to Cloudinary, AWS S3, or another CDN
+2. **Update** `/src/components/Hero.jsx` line 35 with your URL:
+   ```javascript
+   <source src="https://your-cdn.com/your-video.mp4" type="video/mp4" />
+   ```
 
 ## Video Requirements
 
@@ -17,19 +46,11 @@ To add your eclipse video to the hero section:
 - **File Size**: Under 50MB for optimal web performance
 - **Duration**: 10-30 seconds (will loop automatically)
 
-### Fallback Options
-If you don't have a video yet, the site currently displays:
+### Fallback Display
+If the video fails to load, the site displays:
 - Animated eclipse icon (sun and moon)
 - Gradient background overlay
-- All other visual elements
-
-## Custom Video Path
-
-If you want to use a different filename or location, update line 29 in `/src/components/Hero.jsx`:
-
-```javascript
-<source src="/your-video-name.mp4" type="video/mp4" />
-```
+- All other visual elements remain functional
 
 ## Video Optimization Tips
 
@@ -45,19 +66,6 @@ If you want to use a different filename or location, update line 29 in `/src/com
    ```
 
 3. **Test loading times** on different connections
-
-## Alternative: Use External Video Hosting
-
-For larger videos, consider using:
-- YouTube (embedded)
-- Vimeo
-- Cloudinary
-- AWS S3
-
-Example for external URL:
-```javascript
-<source src="https://your-cdn.com/eclipse-video.mp4" type="video/mp4" />
-```
 
 ## Testing
 
