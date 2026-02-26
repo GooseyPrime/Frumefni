@@ -1,0 +1,245 @@
+.about {
+  position: relative;
+  background: linear-gradient(180deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+}
+
+.stars-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 15% 90%, white, transparent);
+  background-size: 200% 200%;
+  animation: twinkle 200s ease-in-out infinite;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+}
+
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  text-align: center;
+}
+
+.pillars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+.pillar-card {
+  background: rgba(10, 10, 10, 0.8);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.pillar-card:hover::before {
+  opacity: 1;
+}
+
+.pillar-card.connect {
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.pillar-card.connect:hover {
+  border-color: rgba(139, 92, 246, 0.8);
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
+  transform: translateY(-10px);
+}
+
+.pillar-card.explore {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.pillar-card.explore:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+  transform: translateY(-10px);
+}
+
+.pillar-card.learn {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.pillar-card.learn:hover {
+  border-color: rgba(59, 130, 246, 0.8);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+  transform: translateY(-10px);
+}
+
+.pillar-icon {
+  margin-bottom: 2rem;
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 2px solid var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.connect .icon-circle {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.learn .icon-circle {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.icon-circle svg {
+  width: 50px;
+  height: 50px;
+}
+
+.pillar-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  color: var(--text-white);
+}
+
+.pillar-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.pillar-focus {
+  font-size: 0.9rem;
+  color: var(--accent-silver);
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+.confluence {
+  margin-top: 6rem;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  border-radius: 30px;
+  position: relative;
+}
+
+.confluence-symbol {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.symbol-ring {
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--accent-gold);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.symbol-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--accent-gold);
+}
+
+.confluence-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.confluence-subtitle {
+  font-size: 1.3rem;
+  color: var(--accent-silver);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.confluence-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pillars-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .pillar-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .confluence {
+    padding: 3rem 1.5rem;
+    margin-top: 4rem;
+  }
+  
+  .confluence-title {
+    font-size: 1.8rem;
+  }
+  
+  .confluence-subtitle {
+    font-size: 1.1rem;
+  }
+}

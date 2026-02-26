@@ -1,0 +1,69 @@
+import React from 'react';
+import './Footer.css';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-logo">
+          <div className="footer-eclipse">
+            <div className="footer-sun"></div>
+            <div className="footer-moon"></div>
+          </div>
+          <div className="footer-title">FRUMEFNI</div>
+          <div className="footer-subtitle">The Elemental Contact</div>
+        </div>
+
+        <div className="footer-info">
+          <div className="footer-section">
+            <h4>The Event</h4>
+            <p>August 12, 2026</p>
+            <p>Iceland</p>
+            <p>Total Solar Eclipse</p>
+            <a href="https://icelandeclipse.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+              Visit Iceland Eclipse →
+            </a>
+          </div>
+
+          <div className="footer-section">
+            <h4>Festival Pillars</h4>
+            <p>CONNECT</p>
+            <p>EXPLORE</p>
+            <p>LEARN</p>
+          </div>
+
+          <div className="footer-section">
+            <h4>Project Lead</h4>
+            <p>M. Brandon Lane</p>
+            <p className="contact-info">326 Delaware Street</p>
+            <p className="contact-info">Johnson City, TN 37604</p>
+            <p className="contact-info">
+              <a href="mailto:brandon@intellmeai.com">brandon@intellmeai.com</a>
+            </p>
+            <p className="contact-info">
+              <a href="tel:+17473221977">747-322-1977</a>
+            </p>
+            <p className="contact-info">
+              <a href="https://t.me/GooseyPrime" target="_blank" rel="noopener noreferrer">
+                Telegram: @GooseyPrime
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="footer-quote">
+          <p>"Where Earth, Cosmos, and Self converge in a moment of collective transformation"</p>
+        </div>
+
+        <div className="footer-bottom">
+          <p>&copy; {currentYear} Frumefni: The Elemental Contact. All rights reserved.</p>
+          <p className="footer-tagline">A pioneering fusion of radical wellness, performance art, and ethnographic research</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
