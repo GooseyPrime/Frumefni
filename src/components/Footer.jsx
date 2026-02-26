@@ -36,7 +36,20 @@ const Footer = () => {
 
           <div className="footer-section">
             <h4>Project Lead</h4>
-            <p>Michael Brandon Lane</p>
+            <p>M. Brandon Lane</p>
+            <p className="contact-info">326 Delaware Street</p>
+            <p className="contact-info">Johnson City, TN 37604</p>
+            <p className="contact-info">
+              <a href="mailto:brandon@intellmeai.com">brandon@intellmeai.com</a>
+            </p>
+            <p className="contact-info">
+              <a href="tel:+17473221977">747-322-1977</a>
+            </p>
+            <p className="contact-info">
+              <a href="https://t.me/GooseyPrime" target="_blank" rel="noopener noreferrer">
+                Telegram: @GooseyPrime
+              </a>
+            </p>
           </div>
         </div>
 

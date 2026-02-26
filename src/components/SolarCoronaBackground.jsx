@@ -96,9 +96,9 @@ const SolarCoronaBackground = () => {
           this.x, this.y, this.size * 3
         );
         
-        gradient.addColorStop(0, `hsla(${this.hue}, 100%, 95%, ${this.energy * 0.8})`);
-        gradient.addColorStop(0.5, `hsla(${this.hue}, 100%, 90%, ${this.energy * 0.4})`);
-        gradient.addColorStop(1, `hsla(${this.hue}, 80%, 85%, 0)`);
+        gradient.addColorStop(0, `hsla(${this.hue}, 100%, 70%, ${this.energy * 0.15})`);
+        gradient.addColorStop(0.5, `hsla(${this.hue}, 100%, 65%, ${this.energy * 0.08})`);
+        gradient.addColorStop(1, `hsla(${this.hue}, 80%, 60%, 0)`);
 
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
@@ -108,7 +108,7 @@ const SolarCoronaBackground = () => {
         // Core particle
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${this.hue}, 100%, 98%, ${this.energy})`;
+        ctx.fillStyle = `hsla(${this.hue}, 100%, 80%, ${this.energy * 0.3})`;
         ctx.fill();
       }
     }
@@ -166,9 +166,9 @@ const SolarCoronaBackground = () => {
             const hue1 = 55;
             const hue2 = 58;
             
-            gradient.addColorStop(0, `hsla(${hue1}, 100%, 95%, ${opacity * 0.3})`);
-            gradient.addColorStop(0.5, `hsla(56, 100%, 97%, ${opacity * 0.5})`);
-            gradient.addColorStop(1, `hsla(${hue2}, 100%, 95%, ${opacity * 0.3})`);
+            gradient.addColorStop(0, `hsla(${hue1}, 100%, 70%, ${opacity * 0.08})`);
+            gradient.addColorStop(0.5, `hsla(56, 100%, 75%, ${opacity * 0.12})`);
+            gradient.addColorStop(1, `hsla(${hue2}, 100%, 70%, ${opacity * 0.08})`);
 
             ctx.strokeStyle = gradient;
             ctx.lineWidth = opacity * 2;
@@ -183,7 +183,7 @@ const SolarCoronaBackground = () => {
             ctx.stroke();
             
             // Add glow effect to arcs
-            ctx.strokeStyle = `hsla(55, 100%, 98%, ${opacity * 0.15})`;
+            ctx.strokeStyle = `hsla(55, 100%, 80%, ${opacity * 0.05})`;
             ctx.lineWidth = opacity * 4;
             ctx.stroke();
           }
